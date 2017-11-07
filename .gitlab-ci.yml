@@ -6,5 +6,9 @@ pages:
   - mkdir .public
   - cp -r * .public
   - mv .public public
+  artifacts:
+    paths:
+    - public
+    expire_in: 1 week
   only:
   - master
